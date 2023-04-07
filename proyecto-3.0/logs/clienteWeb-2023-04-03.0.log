@@ -1,0 +1,97 @@
+2023-04-03 19:58:27,406 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ProyectoApplication using Java 17.0.6 on DESKTOP-U83I70G with PID 3152 (E:\springboot\proyecto-3.0\target\classes started by jsusi in E:\springboot\proyecto-3.0)
+2023-04-03 19:58:27,410 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-04-03 19:58:27,477 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-03 19:58:27,478 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-03 19:58:28,453 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-03 19:58:28,456 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-04-03 19:58:28,489 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tokioschool.web.repository.FilmRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-04-03 19:58:28,491 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tokioschool.web.repository.PersonRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-04-03 19:58:28,494 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tokioschool.web.repository.ReviewRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-04-03 19:58:28,496 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tokioschool.web.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-04-03 19:58:28,499 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tokioschool.web.repository.ScoreRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-04-03 19:58:28,501 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.tokioschool.web.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-04-03 19:58:28,502 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 40 ms. Found 0 JDBC repository interfaces.
+2023-04-03 19:58:28,516 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-04-03 19:58:28,518 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 19:58:28,561 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+2023-04-03 19:58:29,140 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-04-03 19:58:29,149 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-03 19:58:29,150 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-04-03 19:58:29,151 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-04-03 19:58:29,237 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-04-03 19:58:29,238 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1756 ms
+2023-04-03 19:58:29,534 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 19:58:29,576 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-04-03 19:58:29,718 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 19:58:29,808 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-04-03 19:58:29,968 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-04-03 19:58:29,994 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2023-04-03 19:58:30,754 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 19:58:30,760 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 19:58:31,364 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 19:58:31,386 INFO com.tokioschool.web.config.FilmImageConfig [restartedMain] Comprobamos existencia directorio
+2023-04-03 19:58:31,591 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [restartedMain] You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-03 19:58:31,592 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will not secure Ant [pattern='/resources/**']
+2023-04-03 19:58:31,593 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [restartedMain] You are asking Spring Security to ignore Ant [pattern='/static/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-03 19:58:31,594 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will not secure Ant [pattern='/static/**']
+2023-04-03 19:58:31,594 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [restartedMain] You are asking Spring Security to ignore Ant [pattern='/templates/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-03 19:58:31,595 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will not secure Ant [pattern='/templates/**']
+2023-04-03 19:58:31,596 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [restartedMain] You are asking Spring Security to ignore Ant [pattern='/css/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-03 19:58:31,597 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will not secure Ant [pattern='/css/**']
+2023-04-03 19:58:31,598 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [restartedMain] You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-03 19:58:31,598 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will not secure Ant [pattern='/js/**']
+2023-04-03 19:58:31,599 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [restartedMain] You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-03 19:58:31,599 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will not secure Ant [pattern='/images/**']
+2023-04-03 19:58:31,600 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [restartedMain] You are asking Spring Security to ignore Ant [pattern='/fonts/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-03 19:58:31,600 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will not secure Ant [pattern='/fonts/**']
+2023-04-03 19:58:31,601 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [restartedMain] You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-03 19:58:31,602 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will not secure Ant [pattern='/webjars/**']
+2023-04-03 19:58:31,602 WARN org.springframework.security.config.annotation.web.builders.WebSecurity [restartedMain] You are asking Spring Security to ignore Ant [pattern='/error/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-04-03 19:58:31,603 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will not secure Ant [pattern='/error/**']
+2023-04-03 19:58:31,647 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2598ddfc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@283252b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@654c097a, org.springframework.security.web.header.HeaderWriterFilter@113776f7, org.springframework.security.web.csrf.CsrfFilter@48af1534, org.springframework.security.web.authentication.logout.LogoutFilter@f7ee2c2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1d49ed58, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e15a595, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e713a73, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ac359c2, org.springframework.security.web.session.SessionManagementFilter@4b63aaf0, org.springframework.security.web.access.ExceptionTranslationFilter@411a2ab0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66d30f3b]
+2023-04-03 19:58:31,742 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2023-04-03 19:58:32,124 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-04-03 19:58:32,130 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 19:58:32,163 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-03 19:58:32,183 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-03 19:58:32,197 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ProyectoApplication in 5.192 seconds (JVM running for 5.596)
+2023-04-03 19:58:33,669 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 19:58:33,669 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2023-04-03 19:58:33,671 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 1 ms
+2023-04-03 20:44:12,636 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.pattern.ClassOfCallerConverter@62b7960d - failed to parse integer string [1.] java.lang.NumberFormatException: For input string: "1."
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:136)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:81)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:64)
+	at java.base/java.lang.Iterable.forEach(Unknown Source)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:63)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at com.tokioschool.web.ProyectoApplication.main(ProyectoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.classic.pattern.ClassOfCallerConverter@62b7960d - failed to parse integer string [1.] java.lang.NumberFormatException: For input string: "1."
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reportConfigurationErrorsIfNecessary(LogbackLoggingSystem.java:260)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:247)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:187)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 24 common frames omitted
