@@ -21,7 +21,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 @CrossOrigin
-public class ControllerUser {
+public class ControllerLogin {
 	
 	
 	private final JwtTokenUtil jwtTokenUtil;
@@ -55,4 +55,5 @@ public class ControllerUser {
 	    }
 	}
 
+	
 }

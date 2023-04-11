@@ -5,13 +5,9 @@ import static org.springframework.security.config.Customizer.withDefaults;
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
@@ -39,8 +35,8 @@ public class WebSecurityConfig  {
 	                , "/swagger-resources"
 	                , "/configuration/security"
 	                , "/configuration/ui"
+					, "/reservation/**"
 	                , "/api-docs/**"
-	                , "/recetas/**"
 	                , "/testExchangeAuthentication")
                         .permitAll()
                         .anyRequest().authenticated())

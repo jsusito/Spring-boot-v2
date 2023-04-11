@@ -42,7 +42,14 @@ public class HandleException {
 	@ResponseStatus (HttpStatus.BAD_REQUEST) //Para los json mal formados
 	@ExceptionHandler (HttpMessageNotReadableException.class) 
 	public Map<String, String> httpMessageNotReadobleException(HttpMessageNotReadableException e) { 
-		return Map.of("messoge", "malformed request");
+		return Map.of("message", "malformed request");
+	}
+
+	@ResponseStatus(HttpStatus.EXPECTATION_FAILED) 
+	@ExceptionHandler(IllegalArgumentException.class)
+	public Map<String, String> noFoundField(IllegalArgumentException e) { 
+		
+		return Map.of( "message", e.getMessage());
 	}
 	
 }

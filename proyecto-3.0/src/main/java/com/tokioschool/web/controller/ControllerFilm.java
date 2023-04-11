@@ -80,14 +80,14 @@ public class ControllerFilm {
 			Set<Film> films = null;
 			films = filmService.findByTitleContainingOrderByTitle(title);
 			model.addAttribute("films", films);
-			return "/film/search-film";
+			return "film/search-film";
 		}
 			
 		
 		Film film = new Film();
 		model.addAttribute("film", film);
 		model.addAttribute("sourceDirFilm", ConstantsConfig.SOURCE_DIR);
-		return "/film/result-search-film";
+		return "film/result-search-film";
 	}
 	
 	
@@ -95,7 +95,7 @@ public class ControllerFilm {
 	
 	@PostMapping("/show-film")
 	public RedirectView showFilm(@ModelAttribute Film film) {
-		return new RedirectView("/film/search-films/" + film.getTitle());
+		return new RedirectView("search-films/" + film.getTitle());
 	}
 	
 	
@@ -117,7 +117,7 @@ public class ControllerFilm {
 		model.addAttribute("actors", actors);
 		model.addAttribute("selectMusicians", musicians);
 		model.addAttribute("selectphotographers", photographers);
-		return "/film/new-film";
+		return "film/new-film";
 	}
 	
 	@PostMapping("/new-film")
@@ -133,14 +133,14 @@ public class ControllerFilm {
 		//Guardamos en atributo
 		filmSesion = currentFilm;
 						
-		return "/film/new-film";
+		return "film/new-film";
 	}
 	
 	@PostMapping("/save-image/{id}")
-	public String saveImage(@RequestParam("image") MultipartFile image, Model model, @PathVariable("id") long id) {
+	public RedirectView saveImage(@RequestParam("image") MultipartFile image, Model model, @PathVariable("id") long id) {
 		Film film = filmService.findById(id);
 		filmImageService.recordImageFilm(film, image);
-		return "redirect:/film/register-film";
+		return new RedirectView("./../register-film");
 	
 	}
 	//Muestra la pelicula recien registrada
@@ -148,7 +148,7 @@ public class ControllerFilm {
 	public String registedFilm(Model model) {
 		Set<Film> films = filmService.findByTitleContainingOrderByTitle(filmSesion.getTitle());
 		model.addAttribute("films", films);
-		return "/film/search-film";
+		return "film/search-film";
 	}
 	
 	@GetMapping("/edit-film/{id}")
@@ -162,7 +162,7 @@ public class ControllerFilm {
 		model.addAttribute("selectMusicians", film.getMusicians());
 		model.addAttribute("selectphotographers", film.getFilmPhotographer());
 		model.addAttribute("poster", film.getPoster());
-		return "/film/edit-film";
+		return "film/edit-film";
 	}
 	
 	
@@ -200,7 +200,7 @@ public class ControllerFilm {
 		
 		model.addAttribute("reviewExist" , reviewExist);
 		model.addAttribute("reviews", reviews);
-		return "/film/film";
+		return "film/film";
 	}
 	
 	@PostMapping("/add-review")
@@ -230,10 +230,10 @@ public class ControllerFilm {
 			
 			throw new FoundReviewException("Ya hiciste la critica, no se puede repetir\nInfo: " + responseEntity.getStatusCode());
 		}
-		return "redirect:/film/" + review.getFilm().getId();
+		return "redirect:./" + review.getFilm().getId();
 	}
 	
-	@PostMapping("/film")
+	@PostMapping("film")
 	public String registerPoinst(Model model, @ModelAttribute("score") Score currentScore){
 		
 		Film film = filmService.findById(filmSesion.getId());
@@ -250,7 +250,7 @@ public class ControllerFilm {
 			score = scoreService.save(score);
 		}
 		
-		return "redirect:/film/" + film.getId();
+		return "redirect:../film/" + film.getId();
 	}
 	
 	private void addModelNewFilm(Model model, Film film) {

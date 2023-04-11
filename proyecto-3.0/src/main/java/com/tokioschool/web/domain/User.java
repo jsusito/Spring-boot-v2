@@ -53,16 +53,18 @@ public class User {
 	@Column(nullable = false)
 	String email;
 	
+	String telephone;
+	
 	String image;
 	
 	
 	@Column(nullable = false)
 	@Setter(value = AccessLevel.NONE)
-	//@Getter(value = AccessLevel.NONE)
 	LocalDate birtDate;
 	
 	@CreationTimestamp 
 	private LocalDate creationDate; 
+	
 	@UpdateTimestamp  
 	private LocalDateTime lastLogin;
 	
@@ -103,17 +105,11 @@ public class User {
 		
 		User user = (User) obj;
 		return (this.username.equals(user.username));
-			
-		
-		
 	}
 	@Override
 	public String toString() {
 		return username; 
-		
 	}
-
-
 
 	public void setBirtDate(String currentBirtDate) {
 		birtDate = LocalDate.parse(currentBirtDate, DateTimeFormatter.ofPattern("yyyy-MM-dd"));

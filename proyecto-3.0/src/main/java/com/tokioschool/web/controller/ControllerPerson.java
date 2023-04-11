@@ -30,7 +30,7 @@ public class ControllerPerson {
 		model.addAttribute("person", person);
 		model.addAttribute("result", result);
 		model.addAttribute("diferentPerson", Person.TypePerson.values());
-		return "/person/new-person";
+		return "./person/new-person";
 		
 	}
 	
@@ -41,7 +41,7 @@ public class ControllerPerson {
 		logger.info("Procedemos a Guardar una Persona en la Tabla bd");
 		personService.save(newPerson);
 		model.addAttribute("result", "Se registro correctamente");
-		return "/person/new-person";
+		return "./person/new-person";
 		
 	}
 }

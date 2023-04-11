@@ -47,7 +47,7 @@ public class ControllerUser {
 		model.addAttribute("username", username);
 		model.addAttribute("newUser", new User());
 		model.addAttribute("diferentRoles", roleService.findAll());
-		return "/user/new-user";
+		return "user/new-user";
 	}
 	
 	@PostMapping("/user/new-user")
@@ -59,9 +59,7 @@ public class ControllerUser {
 			return "redirect:/new-user?username=" + u.get().getUsername();
 		
 		User newUser = user;
-		//newUser.setCreationDate(LocalDate.now());
-		//newUser.setLastLogin(LocalDateTime.now());
-		
+				
 		newUser.setPassword(getPasswordEncoder(user.getPassword()));
 		newUser.setActive(true);
 		

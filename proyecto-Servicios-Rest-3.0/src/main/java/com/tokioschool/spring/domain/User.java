@@ -50,6 +50,7 @@ public class User {
 	
 	String image;
 	
+	String telephone;
 	
 	@Column(nullable = false)
 	@Setter(value = AccessLevel.NONE)
@@ -73,6 +74,7 @@ public class User {
 	@OneToMany(mappedBy = "user")
 	Set<Review> reviews;
 	
+		
 	@Override
 	public int hashCode() {
 		

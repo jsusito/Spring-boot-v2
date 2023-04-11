@@ -62,15 +62,17 @@ public class TokioUserDetailsService implements UserDetailsService {
 	//Autentifiación de los usuarios.
 	
 	//Creamos un metodo para devolver el objeto UserDetails que es el que llama Spring para Comprobar la
-		//Autentifiación de los usuarios.
-		private UserDetails buildUserForAuthentication(User user, List<GrantedAuthority> authorities) {
-			return new org.springframework.security.core.userdetails.User(
-					user.getUsername(),
-					user.getPassword(),
-	                user.isActive(),
-	                true, //cuenta expira
-	                true, //credenciales no expiran?
-	                true, //cuenta no bloqueada
-	                authorities);
-			}
+	//Autentifiación de los usuarios.
+	private UserDetails buildUserForAuthentication(User user, List<GrantedAuthority> authorities) {
+		return new org.springframework.security.core.userdetails.User(
+				user.getUsername(),
+				user.getPassword(),
+                user.isActive(),
+                true, //cuenta expira
+                true, //credenciales no expiran?
+                true, //cuenta no bloqueada
+                authorities);
+		}
+	
+	
 }
