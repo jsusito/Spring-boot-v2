@@ -1,2 +1,2 @@
-# Spring-boot-v2
-Proyecto actualizado a la versión más actual de spring. Aunque no está terminado es completamente funcional.
+# Spring-boot
+Proyecto actualizado a la versión más actual de spring boot. Aunque no está terminado es completamente funcional. v0.9
